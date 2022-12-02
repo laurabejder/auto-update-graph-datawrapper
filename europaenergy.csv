@@ -4,7 +4,9 @@ country,price
  Bulgaria,301.0
  Croatia,299.0
  Czech Rep.,291.0
+ Denmark,262.0
  Estonia,336.0
+ Finland,317.0
  France,308.0
  Germany,282.0
  Greece,297.0
@@ -12,6 +14,7 @@ country,price
  Latvia,336.0
  Lithuania,336.0
  Netherlands,300.0
+ Norway,224.0
  Poland,229.0
  Portugal,120.0
  Romania,301.0
@@ -19,3 +22,4 @@ country,price
  Slovakia,301.0
  Slovenia,298.0
  Spain,120.0
+ Sweden,262.0
