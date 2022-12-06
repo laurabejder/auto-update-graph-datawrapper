@@ -18,10 +18,6 @@ jobs:
       run: pip install jupyter lxml pandas requests beautifulsoup4
     - name: Run the scraping script
       run: jupyter nbconvert --to notebook --execute "data_update.ipynb" --stdout
-    - name: Add today's data to file
-      run: jupyter nbconvert --to notebook --execute "several_days.ipynb" --stdout
-    - name: Reformat longitudinal data
-      run: jupyter nbconvert --to notebook --execute "reformating_data.ipynb" --stdout
     - name: Commit and push any changes
       run: |-
         git config user.name "Automated"
