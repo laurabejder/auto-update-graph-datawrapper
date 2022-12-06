@@ -1,5 +1,5 @@
 country,price
- Austria,366.0
+ Austria,362.0
  Belgium,407.0
  Bulgaria,363.0
  Croatia,370.0
@@ -11,6 +11,7 @@ country,price
  Germany,325.0
  Greece,345.0
  Hungary,373.0
+ Italy,373.0
  Latvia,340.0
  Lithuania,340.0
  Netherlands,340.0
