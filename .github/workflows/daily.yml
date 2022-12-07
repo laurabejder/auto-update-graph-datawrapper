@@ -1,11 +1,11 @@
-name: publish
+name: daily
 on:
   workflow_dispatch:
   schedule:
-    - cron: '*/30 * * * *'
+    - cron: '0 16 * * *'
   push:
 jobs:
-  publish:
+  daily:
     runs-on: ubuntu-latest
     steps:
     - name: Check out this repo
@@ -16,8 +16,10 @@ jobs:
         python-version: '3.10'
     - name: Install all necessary packages
       run: pip install jupyter lxml pandas requests beautifulsoup4
-    - name: Run the scraping script
-      run: jupyter nbconvert --to notebook --execute "data_update.ipynb" --stdout
+    - name: Add today's data
+      run: jupyter nbconvert --to notebook --execute "several_days.ipynb" --stdout
+    - name: Reformatting from long to wide data
+      run: jupyter nbconvert --to notebook --execute "reformating_data.ipynb" --stdout
     - name: Commit and push any changes
       run: |-
         git config user.name "Automated"
