@@ -11,6 +11,7 @@ country,price
  Germany,15.0
  Greece,228.0
  Hungary,55.0
+ Italy,180.0
  Latvia,57.0
  Lithuania,57.0
  Netherlands,16.0
@@ -23,3 +24,4 @@ country,price
  Slovenia,35.0
  Spain,6.0
  Sweden,18.0
+ Switzerland,26.0
